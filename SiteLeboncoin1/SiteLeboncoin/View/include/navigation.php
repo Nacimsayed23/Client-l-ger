@@ -140,42 +140,42 @@ if(isset($_POST["search"])){
             </div>
         </div>
     </nav>
-    <nav class="bottom-navbar bg-warning">
+    <nav class="bottom-navbar bg-success">
         <div class="container">
             <ul class="nav page-navigation">
-                <li class="nav-item <?= $telephone ?>">
+                <li class="nav-item <?= $femme ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=1">
-                    <i class="fas fa-couch mx-2"></i>
-
-                        <span class="menu-title">Mobilier Salon</span>
+                    <i class="fa-solid fa-person-dress mx-2"></i>
+                    
+                        <span class="menu-title">Femme</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $ordinateur ?>">
+                <li class="nav-item <?= $homme ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=2">
-                    <i class="fas fa-chair mx-2"></i>
+                    <i class="fa-solid fa-person mx-2 "></i>
 
-                        <span class="menu-title">Mobilier de salle manger</span>
+                        <span class="menu-title">Homme</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $sciencefiction ?>">
+                <li class="nav-item <?= $enfant ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=3">
-                    <i class="fas fa-bed mx-2"></i>
+                    <i class="fa-solid fa-children mx-2 "></i>
 
-                        <span class="menu-title">Mobilier de chambre</span>
+                        <span class="menu-title">Enfant</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $developpementpersonnel ?>">
+                <li class="nav-item <?= $chaussure ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=4">
-                    <i class="fas fa-bath mx-2"></i>
+                    <i class="fa-solid fa-shoe-prints mx-2"></i>
 
-                        <span class="menu-title">Mobilier salle de bain</span>
+                        <span class="menu-title">Chaussure</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $accessoire ?>">
+                <li class="nav-item <?= $sacsamain ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=5">
-                    <i class="fas fa-utensils mx-2"></i>
+                    <i class="fa-solid fa-bag-shopping mx-2"></i>
 
-                        <span class="menu-title">Mobilier cuisine</span>
+                        <span class="menu-title">Sacs à main</span>
                     </a>
                 </li>
             </ul>
