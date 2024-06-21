@@ -80,7 +80,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Electro-Annonce</title>
+    <title>Annonce</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body style="background-color: #f2edf3">

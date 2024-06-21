@@ -46,7 +46,7 @@ if(isset($_POST["send"])){
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Detail annonce Electro-Annonce</title>
+    <title>Detail annonce Annonce</title>
     <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 <body style="background-color: #f2edf3">
@@ -72,7 +72,7 @@ if(isset($_POST["send"])){
                             <div class="card-body">
                                 <div class='card rounded hover-shadow'>
                                     <div class="card">
-                                        <img src='../<?=$photo?>' width='350'>
+                                        <img src='../<?=$photo?>' width='340'>
                                         <br>
                                         <span class="favorite-button"><a class="btn btn-danger" href="<?php if(isset($uid)): ?> action_get.php?action=ajoutFavori&ida=<?= $ida ?>&idu=<?= $uid ?>&route=location:detail.php?ida=<?=$ida?><?php else: ?>connexion.php<?php endif; ?>">
                                     <!-- sur ce bouton la possibilté d'ajouter au favoris, il renvoie à la page action_get : où la requete est effectué -->
@@ -108,15 +108,15 @@ if(isset($_POST["send"])){
                                         <h2><?=$titre?><p class="float-end h3"><?= number_format($prix, 0, ',', ' ')  ?> €</p></h2>
                                         <ul class="product-variation">
                                             <?php if ($categorie==1): ?>
-                                                <a class="badge badge-pill badge-primary" href="categorie.php?idcategorie=<?=$categorie?>">Téléphones mobiles<i class="fa-solid fa-heart mx-2"></i></a>
+                                                <a class="badge badge-pill badge-primary" href="categorie.php?idcategorie=<?=$categorie?>">Femme <i class="fa-solid fa-heart mx-2"></i></a>
                                             <?php elseif ($categorie==2): ?>
-                                                <a class="badge badge-pill badge-warning">Ordinateurs portables<i class="fa-solid fa-user-secret mx-2"></i></a>
+                                                <a class="badge badge-pill badge-warning">Homme <i class="fa-solid fa-user-secret mx-2"></i></a>
                                             <?php elseif ($categorie==3): ?>
-                                                <a class="badge badge-pill badge-info">Ordinateurs de bureau<i class="fa-solid fa-rocket mx-2"></i></a>
+                                                <a class="badge badge-pill badge-info">Enfant <i class="fa-solid fa-rocket mx-2"></i></a>
                                             <?php elseif ($categorie==4): ?>
-                                                <a class="badge badge-pill badge-danger">Tablettes<i class="fa-solid fa-feather-pointed mx-2"></i></a>
+                                                <a class="badge badge-pill badge-danger">Chaussure <i class="fa-solid fa-feather-pointed mx-2"></i></a>
                                             <?php else: ?>
-                                                <a class="badge badge-pill badge-success">Accessoires électroniques<i class="fa-solid fa-earth-europe mx-2"></i></a>
+                                                <a class="badge badge-pill badge-success">Sacs à main <i class="fa-solid fa-earth-europe mx-2"></i></a>
                                             <?php endif; ?>
                                             <!-- selon la catégorie, un different badge va s'afficher  -->
 

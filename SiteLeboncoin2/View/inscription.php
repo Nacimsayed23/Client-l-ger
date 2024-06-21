@@ -213,7 +213,7 @@ if(isset($_POST['submit']))
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex flex-row">
-                <img src="../image/image.jpg" alt="">
+                <img src="../image/image.png" alt="">
                 </div> 
             </div>
         </div>

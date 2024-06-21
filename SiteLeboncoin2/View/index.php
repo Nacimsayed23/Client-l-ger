@@ -7,11 +7,11 @@ if(isset($_POST["recherche"])){
     header("location:categorie.php?idcategorie=".$_POST["categorie"]."&recherche=".$_POST["recherchetext"]);
     //envoie vers la page categorie.php avec l'id de la catégorie et la recherche
 }
-?>5
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Accueil Electro-Annonce</title>
+    <title>Accueil Annonce</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body style="background-color: #f2edf3">
@@ -67,7 +67,7 @@ if(isset($_POST["recherche"])){
                     <div class="grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="text-center">Les Meubles le plus vues </h2>
+                                <h2 class="text-center">Les Articles le plus vues </h2>
                                 <div class="row product-item-wrapper mt-4">
 
                                     <?php foreach ($pdo->query("SELECT * from annonce order by vue desc LIMIT 20") as $tableau): ?>
@@ -114,15 +114,15 @@ if(isset($_POST["recherche"])){
                                                 </p>
                                                 <ul class="product-variation">
                                                         <?php if ($tableau["categorie"]==1): ?>
-                                                        <span class="badge badge-primary">Mobilier Salon <i class="fa-solid fa-heart mx-2"></i></span>
+                                                        <span class="badge badge-primary">Femme <i class="fa-solid fa-heart mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==2): ?>
-                                                        <span class="badge badge-warning">Mobilier de salle à manger<i class="fa-solid fa-user-secret mx-2"></i></span>
+                                                        <span class="badge badge-warning">Homme <i class="fa-solid fa-user-secret mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==3): ?>
-                                                        <span class="badge badge-info">Mobilier chambre <i class="fa-solid fa-rocket mx-2"></i></span>
+                                                        <span class="badge badge-info">Enfant <i class="fa-solid fa-rocket mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==4): ?>
-                                                        <span class="badge badge-danger">Mobilier salle de bain <i class="fa-solid fa-feather-pointed mx-2"></i></span>
+                                                        <span class="badge badge-danger">Chaussure <i class="fa-solid fa-feather-pointed mx-2"></i></span>
                                                         <?php else: ?>
-                                                        <span class="badge badge-success">Mobilier cuisine<i class="fa-solid fa-earth-europe mx-2"></i></span>
+                                                        <span class="badge badge-success">Sacs à main <i class="fa-solid fa-earth-europe mx-2"></i></span>
                                                         <?php endif; ?>
                                                 </ul>
                                                 <a href="detail.php?ida=<?= $tableau["ida"] ?>" class="btn btn-success">Voir</a>
